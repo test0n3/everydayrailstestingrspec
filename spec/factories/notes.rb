@@ -3,5 +3,6 @@ FactoryBot.define do
     message { "MyText" }
     project { nil }
     user { nil }
+    attachment { nil }
   end
 end

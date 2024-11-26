@@ -34,17 +34,19 @@ gem "bootsnap", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
-# using sass for css
-gem "sassc-rails"
-
 # bootstrap-sass
-gem "bootstrap"
+gem "bootstrap", "~> 5.3.3"
+# required by bootstrap
+gem "dartsass-rails"
 # control authentication
 gem "devise"
 # geolocalization
 gem "geocoder"
 # access to changed data in DB
-gem "paperclip"
+# gem "kt-paperclip", "~> 6.4", ">= 6.4.1"
+#
+# validations for ActiveStorage
+gem "active_storage_validations"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
