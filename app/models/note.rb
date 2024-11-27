@@ -12,12 +12,10 @@ class Note < ApplicationRecord
 
   has_one_attached :attachment
 
-  validates :attachment, attached: true,
-                         content_type: [
+  validates :attachment, content_type: [
                            "image/jpeg",
                            "image/gif",
                            "image/png",
                            "application/pdf"
-                         ]
-                        
+                         ] 
 end
