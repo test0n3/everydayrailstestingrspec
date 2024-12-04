@@ -61,6 +61,10 @@ group :development, :test do
   gem "rspec-rails"
   # Factory Bot support for Rails
   gem "factory_bot_rails"
+  # Faker for Rails
+  gem "faker", require: false
+  # add attributes to classes
+  gem "annotate"
 end
 
 group :development do
@@ -68,8 +72,6 @@ group :development do
   gem "web-console"
   # fast test suit start times with rspec binstub
   gem "spring-commands-rspec"
-  # for sample data in development
-  gem "faker", require: false
   # display better errors
   gem "better_errors"
   gem "binding_of_caller"

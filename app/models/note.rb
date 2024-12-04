@@ -1,3 +1,14 @@
+# == Schema Information
+#
+# Table name: notes
+#
+#  id         :integer          not null, primary key
+#  message    :text
+#  project_id :integer          not null
+#  user_id    :integer          not null
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
 class Note < ApplicationRecord
   belongs_to :project
   belongs_to :user
@@ -17,5 +28,5 @@ class Note < ApplicationRecord
                            "image/gif",
                            "image/png",
                            "application/pdf"
-                         ] 
+                         ]
 end

@@ -1,3 +1,16 @@
+# == Schema Information
+#
+# Table name: projects
+#
+#  id          :integer          not null, primary key
+#  name        :string
+#  description :text
+#  due_on      :date
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#  user_id     :integer
+#  completed   :boolean
+#
 class Project < ApplicationRecord
   validates :name, presence: true, uniqueness: { scope: :user_id }
 
